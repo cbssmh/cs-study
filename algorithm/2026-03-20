@@ -1,0 +1,235 @@
+# Algorithm Lecture
+## Date
+2026-03-20
+
+---
+
+# Topics
+
+- AVL Tree
+- Rotation (LL, RR, LR, RL)
+- Expression Tree
+- Infix → Postfix (Shunting Yard)
+- Stack-based Evaluation
+- Recursion
+- Tower of Hanoi
+- Divide and Conquer
+- Colored Paper Problem
+- Merge Sort
+
+---
+
+# AVL Tree
+
+An AVL tree is a self-balancing binary search tree.
+
+It maintains balance by controlling the height difference between subtrees.
+
+Balance Factor:
+
+BF = height(left) - height(right)
+
+Condition:
+
+|BF| ≤ 1
+
+If |BF| ≥ 2, the tree becomes unbalanced and must be rotated.
+
+---
+
+# Rotation
+
+Rotations are used to restore balance in AVL trees.
+
+## LL Case  
+Right Rotation
+
+## RR Case  
+Left Rotation
+
+## LR Case  
+Left Rotation → Right Rotation
+
+## RL Case  
+Right Rotation → Left Rotation
+
+---
+
+# Expression Tree
+
+An expression tree represents an arithmetic expression in a binary tree.
+
+Rules:
+
+- Leaf nodes → operands (numbers)
+- Internal nodes → operators
+
+Evaluation:
+
+Postorder traversal evaluates the expression from bottom-up.
+
+---
+
+# Infix to Postfix (Shunting Yard)
+
+Converts infix expressions into postfix expressions using a stack.
+
+Rules:
+
+- Number → output immediately
+- Operator → pop higher or equal precedence operators, then push
+- "(" → push
+- ")" → pop until "("
+
+Example:
+
+Infix:  
+2 + 3 * 5 + 4  
+
+Postfix:  
+2 3 + 5 * 4 +
+
+---
+
+# Postfix Evaluation
+
+Uses a stack to evaluate expressions.
+
+Rules:
+
+- Number → push
+- Operator → pop two values → compute → push result
+
+Example:
+
+2 3 + → 5  
+5 5 * → 25  
+25 4 + → 29  
+
+---
+
+# Recursion
+
+A function that calls itself.
+
+Must include a base case to terminate.
+
+Example:
+
+Factorial
+
+f(n) = n × f(n-1)  
+f(0) = 1  
+
+---
+
+# Tower of Hanoi
+
+A classic recursion problem.
+
+Rules:
+
+- Move one disk at a time
+- A larger disk cannot be placed on a smaller disk
+
+---
+
+# Hanoi Strategy
+
+To move n disks:
+
+1. Move n-1 disks to auxiliary rod  
+2. Move the largest disk to target rod  
+3. Move n-1 disks to target rod  
+
+---
+
+# Recurrence Relation
+
+T(n) = 2T(n-1) + 1  
+
+---
+
+# Solution
+
+T(n) = 2^n - 1  
+
+---
+
+# Divide and Conquer
+
+A problem-solving strategy that:
+
+1. Divides the problem into smaller subproblems  
+2. Solves each subproblem recursively  
+3. Combines the results  
+
+Note:
+
+Not always the most efficient approach for simple tasks (e.g., array sum).
+
+---
+
+# Colored Paper Problem
+
+A typical divide and conquer example.
+
+Given an N×N paper:
+
+- If all cells have the same color → keep it  
+- Otherwise → divide into 4 parts  
+- Repeat recursively  
+
+Stops when:
+
+- All parts are uniform  
+- Or size becomes 1×1  
+
+---
+
+# Merge Sort
+
+A sorting algorithm based on divide and conquer.
+
+## Idea
+
+Merging two sorted arrays is efficient.
+
+## Process
+
+1. Divide array into two halves  
+2. Recursively sort each half  
+3. Merge the two sorted halves  
+
+---
+
+## Merge Process
+
+- Compare elements from both arrays  
+- Insert the smaller one into a temporary array  
+- Move pointer forward  
+- Repeat until one side is exhausted  
+- Append remaining elements  
+
+---
+
+## Time Complexity
+
+O(n log n)
+
+- log n levels of division  
+- n operations per level  
+
+---
+
+## Advantages
+
+- Stable sorting  
+- Consistent performance  
+- Efficient for large data  
+
+---
+
+## Disadvantages
+
+- Requires additional memory (temporary array)
