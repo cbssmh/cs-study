@@ -1,13 +1,76 @@
 # CS Study
 
-컴퓨터공학 기초와 기술 트렌드를 정리한 개인 학습 기록입니다.
+> Personal computer science study repository documenting CS fundamentals, software engineering concepts, security research, and modern technology reading notes.
+
+---
+
+## Purpose
+
+This repository serves as my long-term knowledge base for computer science and software engineering.
+
+Instead of storing scattered notes, I continuously organize concepts into structured documentation that can be reviewed, updated, and referenced throughout future projects.
+
+---
+
+## Repository Structure
+
+```
+fundamentals/
+├── algorithms/
+├── database/
+├── operating-system/
+├── networking/
+
+reading-notes/
+├── hacker-news/
+├── engineering/
+├── ai/
+
+security/
+├── vulnerabilities/
+├── papers/
+```
+
+---
 
 ## Topics
 
 - Algorithms
-- Database
-- Security
+- Database Systems
 - Operating Systems
-- Network
+- Computer Networks
+- Software Engineering
+- Security
+- Distributed Systems
+- AI Infrastructure
+- Cloud Engineering
 
-학기 중 강의 내용과 기술 자료를 정리하며 지속적으로 업데이트하고 있습니다.
+---
+
+## Featured Reading Notes
+
+Recent technical topics include:
+
+- Claude 5 Context Engineering
+- PostgreSQL LISTEN / NOTIFY
+- Hermes Agent
+- Apollo 11 AGC Lock Leak
+- AI Infrastructure
+- Distributed Systems
+- Engineering Leadership
+- Hacker News Daily Reading
+
+---
+
+## Goals
+
+- Build strong CS fundamentals
+- Organize engineering knowledge into reusable references
+- Continuously summarize modern software engineering articles
+- Improve long-term technical writing skills
+
+---
+
+## License
+
+This repository is maintained for educational purposes.
